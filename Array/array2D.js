@@ -15,6 +15,17 @@ Sample Input
 
 Sample Output
 19
+
+Tip: This matrix can be treated as a nested array:
+
+input = [
+  [1 1 1 0 0 0]
+  [0 1 0 0 0 0]
+  [1 1 1 0 0 0]
+  [0 0 2 4 4 0]
+  [0 0 0 2 0 0]
+  [0 0 1 2 4 0]
+]
 */
 
 // Complete the hourglassSum function below.
