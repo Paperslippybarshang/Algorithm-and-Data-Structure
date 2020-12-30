@@ -19,7 +19,7 @@ Sample Output
 
 // Complete the hourglassSum function below.
 function hourglassSum(arr) {
-  let currentOutput = -63;
+  let currentOutput = 0;
       for(let i = 0; i < arr.length-2; i++ ) {
           for(let j = 0; j < arr.length-2; j++ ) {
               let output = (arr[i][j] + arr[i][j+1] + arr[i][j+2] + arr[i+1][j+1] + arr[i+2][j] + arr[i+2][j+1] + arr[i+2][j+2]);
