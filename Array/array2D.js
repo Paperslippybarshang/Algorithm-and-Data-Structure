@@ -31,11 +31,18 @@ input = [
 */
 
 // Complete the hourglassSum function below.
+// function sum(a, b) {
+//   return a + b
+// }
+
 function hourglassSum(arr) {
+  
   let currentOutput = 0;
       for(let i = 0; i < arr.length-2; i++ ) {
           for(let j = 0; j < arr.length-2; j++ ) {
+            // Can I make this part more dynamic? 
               let output = (arr[i][j] + arr[i][j+1] + arr[i][j+2] + arr[i+1][j+1] + arr[i+2][j] + arr[i+2][j+1] + arr[i+2][j+2]);
+              // let output = (arr[i].reduce(sum, 0) + arr[i+1].reduce(, 0) + arr[i+2].reduce(sum, 0));
               currentOutput = (currentOutput < output) ? output : currentOutput;
           }
       }
