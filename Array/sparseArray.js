@@ -29,7 +29,7 @@ function matchingStrings(strings, queries) {
     let occurrence = 0;
     // Loop over each element in 'strings' array and compare it against 'x' using conditional statement
     // for (let i = 0; i < strings.length; i++)
-    for (y of strings) {
+    for (let y of strings) {
       if (y === x) {
         // count the occurrences of y.
          occurrence = occurrence + 1;
