@@ -36,7 +36,7 @@ function arrayManipulation(n, queries) {
     for (let i = 0; i < indivArr.length - 1; i++) {
       let indexNewArr = indivArr[i]-1;
       let increment = newArr[indexNewArr] + indivArr[indivArr.length-1];
-      newArr.splice(indexNewArr, , increment);
+      newArr.splice(indexNewArr, 1, increment);
     }
   }
   return Math.max(...newArr);
