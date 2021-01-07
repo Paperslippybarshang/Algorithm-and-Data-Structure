@@ -30,15 +30,16 @@ The largest value is 10 after all operations are performed.
 */
 
 function arrayManipulation(n, queries) {
-  const newArr = Array(n).fill(0);
-  for (let indivArr of queries) {
-
-    for (let i = 0; i < indivArr.length - 1; i++) {
-      let indexNewArr = indivArr[i]-1;
-      let increment = newArr[indexNewArr] + indivArr[indivArr.length-1];
-      newArr.splice(indexNewArr, 1, increment);
+  const arrA = Array(n).fill(0);
+  for (let a of queries) {
+    let x = a[0];
+    let y = a[1];
+    let z = a[2];
+    
+    for (let i = x-1; i < y; i++) {
+      let increment = arrA[i] + z;
+      arrA.splice(i, 1, increment);
     }
   }
-  return Math.max(...newArr);
- 
+  return Math.max(...arrA);
 }
